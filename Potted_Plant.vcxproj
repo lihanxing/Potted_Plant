@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F2F2D52-A12E-3B3F-9AFE-2639608A3FD3}</ProjectGuid>
+    <RootNamespace>Potted_Plant</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+  <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion><QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Potted_Plant</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Potted_Plant</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" /><Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')"><Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." /></Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')"><Import Project="$(QtMsBuild)\qt_defaults.props" /></ImportGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><OutDir>debug\</OutDir><IntDir>debug\</IntDir><TargetName>Potted_Plant</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary></PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><OutDir>release\</OutDir><IntDir>release\</IntDir><TargetName>Potted_Plant</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary><LinkIncremental>false</LinkIncremental></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><QtInstall>QT</QtInstall><QtModules>core;gui;widgets</QtModules></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><QtInstall>QT</QtInstall><QtModules>core;gui;widgets</QtModules></PropertyGroup><ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')"><Import Project="$(QtMsBuild)\qt.props" /></ImportGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;release;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\Potted_Plant.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>$(Configuration)/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><InitFuncName>res</InitFuncName><Compression>default</Compression><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Potted_Plant.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>$(Configuration)/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><InitFuncName>res</InitFuncName><Compression>default</Compression><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="cube.cpp" />
+    <ClCompile Include="desktop.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="model.cpp" />
+    <ClCompile Include="oglmanager.cpp" />
+    <ClCompile Include="paint.cpp" />
+    <ClCompile Include="resourcemanager.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="texture2d.cpp" />
+    <ClCompile Include="weather.cpp" />
+    <ClCompile Include="windsystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="cube.h" />
+    <ClInclude Include="desktop.h" />
+    <QtMoc Include="mainwindow.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="model.h" />
+    <ClInclude Include="oglmanager.h" />
+    <ClInclude Include="paint.h" />
+    <ClInclude Include="resourcemanager.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="texture2d.h" />
+    <ClInclude Include="weather.h" />
+    <ClInclude Include="windsystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="mainwindow.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\models\huapen\Arch41_039_bark.jpg" />
+    <None Include="res\textures\GreenAshLeaf.tga" />
+    <None Include="res\textures\GreenAshLeaf_Normal.png" />
+    <None Include="res\textures\GreenAshLeaf_Spec.tga" />
+    <None Include="res\qss\Black\arrowBottom.png" />
+    <None Include="res\qss\White\arrowBottom.png" />
+    <None Include="res\qss\Black\arrowLeft.png" />
+    <None Include="res\qss\White\arrowLeft.png" />
+    <None Include="res\qss\Black\arrowRight.png" />
+    <None Include="res\qss\White\arrowRight.png" />
+    <None Include="res\qss\Black\arrowTop.png" />
+    <None Include="res\qss\White\arrowTop.png" />
+    <None Include="res\shaders\bitangent.frag" />
+    <None Include="res\shaders\bitangent.geom" />
+    <None Include="res\shaders\bitangent.vert" />
+    <None Include="res\qss\black.css" />
+    <None Include="res\qss\Black\bottomArrow.png" />
+    <None Include="res\qss\White\bottomArrow.png" />
+    <None Include="res\qss\Black\bottomArrowHover.png" />
+    <None Include="res\qss\White\bottomArrowHover.png" />
+    <None Include="res\textures\brickwall.jpg" />
+    <None Include="res\textures\brickwall_normal_mapping.png" />
+    <None Include="res\qss\Black\checkBox.png" />
+    <None Include="res\qss\White\checkBox.png" />
+    <None Include="res\qss\Black\checkBoxChecked.png" />
+    <None Include="res\qss\White\checkBoxChecked.png" />
+    <None Include="res\qss\Black\checkBoxCheckedHover.png" />
+    <None Include="res\qss\White\checkBoxCheckedHover.png" />
+    <None Include="res\qss\Black\checkBoxCheckedPressed.png" />
+    <None Include="res\qss\White\checkBoxCheckedPressed.png" />
+    <None Include="res\qss\Black\checkBoxHover.png" />
+    <None Include="res\qss\White\checkBoxHover.png" />
+    <None Include="res\qss\Black\checkBoxIndeterminate.png" />
+    <None Include="res\qss\White\checkBoxIndeterminate.png" />
+    <None Include="res\qss\Black\checkBoxIndeterminateHover.png" />
+    <None Include="res\qss\White\checkBoxIndeterminateHover.png" />
+    <None Include="res\qss\Black\checkBoxIndeterminatePressed.png" />
+    <None Include="res\qss\White\checkBoxIndeterminatePressed.png" />
+    <None Include="res\qss\Black\checkBoxPressed.png" />
+    <None Include="res\qss\White\checkBoxPressed.png" />
+    <None Include="res\qss\Black\close.png" />
+    <None Include="res\qss\White\close.png" />
+    <None Include="res\qss\Black\closeHover.png" />
+    <None Include="res\qss\White\closeHover.png" />
+    <None Include="res\qss\Black\closePressed.png" />
+    <None Include="res\qss\White\closePressed.png" />
+    <None Include="res\shaders\coordinate.frag" />
+    <None Include="res\shaders\coordinate.vert" />
+    <None Include="res\shaders\cube.frag" />
+    <None Include="res\models\cube.obj" />
+    <None Include="res\shaders\cube.vert" />
+    <None Include="res\qss\Black\delete.png" />
+    <None Include="res\qss\White\delete.png" />
+    <None Include="res\qss\Black\deleteHover.png" />
+    <None Include="res\qss\White\deleteHover.png" />
+    <None Include="res\qss\Black\deletePressed.png" />
+    <None Include="res\qss\White\deletePressed.png" />
+    <None Include="res\textures\diaolan_leaf.png" />
+    <None Include="res\textures\diaolan_leaf_normal.png" />
+    <None Include="res\qss\Black\downButton.png" />
+    <None Include="res\qss\White\downButton.png" />
+    <None Include="res\qss\Black\error.png" />
+    <None Include="res\qss\White\error.png" />
+    <None Include="res\qss\Black\feedback.png" />
+    <None Include="res\qss\White\feedback.png" />
+    <None Include="res\qss\Black\feedbackHover.png" />
+    <None Include="res\qss\White\feedbackHover.png" />
+    <None Include="res\qss\Black\feedbackPressed.png" />
+    <None Include="res\qss\White\feedbackPressed.png" />
+    <None Include="res\shaders\floor.frag" />
+    <None Include="res\shaders\floor.vert" />
+    <None Include="res\textures\hupilan.png" />
+    <None Include="res\textures\hupilan_normal.png" />
+    <None Include="res\qss\Black\information.png" />
+    <None Include="res\qss\White\information.png" />
+    <None Include="res\textures\junzilan.png" />
+    <None Include="res\textures\junzilan_normal_.png" />
+    <None Include="res\textures\lanhua_leaf.png" />
+    <None Include="res\textures\lanhua_leaf_normal.png" />
+    <None Include="res\qss\Black\left.png" />
+    <None Include="res\qss\White\left.png" />
+    <None Include="res\shaders\light.frag" />
+    <None Include="res\shaders\light.vert" />
+    <None Include="res\qss\Black\maximize.png" />
+    <None Include="res\qss\White\maximize.png" />
+    <None Include="res\qss\Black\maximizeHover.png" />
+    <None Include="res\qss\White\maximizeHover.png" />
+    <None Include="res\qss\Black\maximizePressed.png" />
+    <None Include="res\qss\White\maximizePressed.png" />
+    <None Include="res\qss\Black\minimize.png" />
+    <None Include="res\qss\White\minimize.png" />
+    <None Include="res\qss\Black\minimizeHover.png" />
+    <None Include="res\qss\White\minimizeHover.png" />
+    <None Include="res\qss\Black\minimizePressed.png" />
+    <None Include="res\qss\White\minimizePressed.png" />
+    <None Include="res\shaders\model.frag" />
+    <None Include="res\shaders\model.vert" />
+    <None Include="res\shaders\normal.frag" />
+    <None Include="res\shaders\normal.geom" />
+    <None Include="res\shaders\normal.vert" />
+    <None Include="res\qss\Black\nscc.png" />
+    <None Include="res\qss\White\nscc.png" />
+    <None Include="res\qss\Black\open.png" />
+    <None Include="res\qss\White\open.png" />
+    <None Include="res\qss\Black\openHover.png" />
+    <None Include="res\qss\White\openHover.png" />
+    <None Include="res\qss\Black\openPressed.png" />
+    <None Include="res\qss\White\openPressed.png" />
+    <None Include="res\models\huapen\pen_new.obj" />
+    <None Include="res\models\huapen\penzi.obj" />
+    <None Include="res\shaders\point_shadows_depth.frag" />
+    <None Include="res\shaders\point_shadows_depth.geom" />
+    <None Include="res\shaders\point_shadows_depth.vert" />
+    <None Include="res\qss\Black\progressBar.png" />
+    <None Include="res\qss\White\progressBar.png" />
+    <None Include="res\qss\Black\progressBarChunk.png" />
+    <None Include="res\qss\White\progressBarChunk.png" />
+    <None Include="res\qss\Black\question.png" />
+    <None Include="res\qss\White\question.png" />
+    <None Include="res\qss\Black\radioButton.png" />
+    <None Include="res\qss\White\radioButton.png" />
+    <None Include="res\qss\Black\radioButtonChecked.png" />
+    <None Include="res\qss\White\radioButtonChecked.png" />
+    <None Include="res\qss\Black\radioButtonCheckedHover.png" />
+    <None Include="res\qss\White\radioButtonCheckedHover.png" />
+    <None Include="res\qss\Black\radioButtonCheckedPressed.png" />
+    <None Include="res\qss\White\radioButtonCheckedPressed.png" />
+    <None Include="res\qss\Black\radioButtonHover.png" />
+    <None Include="res\qss\White\radioButtonHover.png" />
+    <None Include="res\qss\Black\radioButtonPressed.png" />
+    <None Include="res\qss\White\radioButtonPressed.png" />
+    <None Include="res\textures\rain.png" />
+    <QtRcc Include="res.qrc">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtRcc>
+    <None Include="res\qss\Black\restore.png" />
+    <None Include="res\qss\White\restore.png" />
+    <None Include="res\qss\Black\restoreHover.png" />
+    <None Include="res\qss\White\restoreHover.png" />
+    <None Include="res\qss\Black\restorePressed.png" />
+    <None Include="res\qss\White\restorePressed.png" />
+    <None Include="res\qss\Black\right.png" />
+    <None Include="res\qss\White\right.png" />
+    <None Include="res\qss\Black\scan.png" />
+    <None Include="res\qss\White\scan.png" />
+    <None Include="res\shaders\shadow_mapping_depth.frag" />
+    <None Include="res\shaders\shadow_mapping_depth.vert" />
+    <None Include="res\qss\Black\skin.png" />
+    <None Include="res\qss\White\skin.png" />
+    <None Include="res\qss\Black\skinHover.png" />
+    <None Include="res\qss\White\skinHover.png" />
+    <None Include="res\qss\Black\skinPressed.png" />
+    <None Include="res\qss\White\skinPressed.png" />
+    <None Include="res\models\huapen\solid_new.obj" />
+    <None Include="res\qss\Black\success.png" />
+    <None Include="res\qss\White\success.png" />
+    <None Include="res\shaders\tangent.frag" />
+    <None Include="res\shaders\tangent.geom" />
+    <None Include="res\shaders\tangent.vert" />
+    <None Include="res\qss\Black\topArrow.png" />
+    <None Include="res\qss\White\topArrow.png" />
+    <None Include="res\qss\Black\topArrowHover.png" />
+    <None Include="res\qss\White\topArrowHover.png" />
+    <None Include="res\qss\Black\transfer.png" />
+    <None Include="res\qss\White\transfer.png" />
+    <None Include="res\qss\Black\upButton.png" />
+    <None Include="res\qss\White\upButton.png" />
+    <None Include="res\textures\uvmap.png" />
+    <None Include="res\qss\Black\warning.png" />
+    <None Include="res\qss\White\warning.png" />
+    <None Include="res\shaders\weather.frag" />
+    <None Include="res\shaders\weather.vert" />
+    <None Include="res\qss\white.css" />
+    <None Include="res\models\huapen\white.jpg" />
+    <None Include="res\textures\wood.jpg" />
+    <None Include="res\textures\wood.png" />
+    <None Include="res\textures\wood_normal.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')"><Import Project="$(QtMsBuild)\qt.targets" /></ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="desktop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oglmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="paint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resourcemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="weather.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windsystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="desktop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oglmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="paint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resourcemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weather.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windsystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\models\huapen\Arch41_039_bark.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\GreenAshLeaf.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\GreenAshLeaf_Normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\GreenAshLeaf_Spec.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\arrowBottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\arrowBottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\arrowLeft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\arrowLeft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\arrowRight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\arrowRight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\arrowTop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\arrowTop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\bitangent.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\bitangent.geom">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\bitangent.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\black.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\bottomArrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\bottomArrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\bottomArrowHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\bottomArrowHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\brickwall.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\brickwall_normal_mapping.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBox.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBox.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxChecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxChecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxCheckedHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxCheckedHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxCheckedPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxCheckedPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxIndeterminate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxIndeterminate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxIndeterminateHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxIndeterminateHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxIndeterminatePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxIndeterminatePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\checkBoxPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\checkBoxPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\closeHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\closeHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\closePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\closePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\coordinate.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\coordinate.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\cube.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\models\cube.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\cube.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\deleteHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\deleteHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\deletePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\deletePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\diaolan_leaf.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\diaolan_leaf_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\downButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\downButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\error.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\error.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\feedback.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\feedback.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\feedbackHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\feedbackHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\feedbackPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\feedbackPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\floor.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\floor.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\hupilan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\hupilan_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\information.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\information.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\junzilan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\junzilan_normal_.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\lanhua_leaf.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\lanhua_leaf_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\light.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\light.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\maximize.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\maximize.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\maximizeHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\maximizeHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\maximizePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\maximizePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\minimize.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\minimize.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\minimizeHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\minimizeHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\minimizePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\minimizePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\model.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\model.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\normal.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\normal.geom">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\normal.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\nscc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\nscc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\openHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\openHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\openPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\openPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\models\huapen\pen_new.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\models\huapen\penzi.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\point_shadows_depth.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\point_shadows_depth.geom">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\point_shadows_depth.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\progressBar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\progressBar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\progressBarChunk.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\progressBarChunk.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\question.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\question.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\radioButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\radioButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\radioButtonChecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\radioButtonChecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\radioButtonCheckedHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\radioButtonCheckedHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\radioButtonCheckedPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\radioButtonCheckedPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\radioButtonHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\radioButtonHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\radioButtonPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\radioButtonPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\rain.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="res.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="res\qss\Black\restore.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\restore.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\restoreHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\restoreHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\restorePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\restorePressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\shadow_mapping_depth.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\shadow_mapping_depth.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\skin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\skin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\skinHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\skinHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\skinPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\skinPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\models\huapen\solid_new.obj">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\success.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\success.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\tangent.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\tangent.geom">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\tangent.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\topArrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\topArrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\topArrowHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\topArrowHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\transfer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\transfer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\upButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\upButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\uvmap.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\Black\warning.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\White\warning.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\weather.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shaders\weather.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\white.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\models\huapen\white.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\wood.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\wood.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\textures\wood_normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
