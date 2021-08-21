@@ -50,10 +50,15 @@ int main(int argc, char* argv[])
 	string windowName = "Lucas Kanade Tracker";
 	namedWindow(windowName, 1);
 	setMouseCallback(windowName, onMouse, 0);
+	//显示追踪轨迹的窗口名
+	string trajectorName = "trajector";
+	namedWindow(trajectorName, 2);
+	
 
-	Mat prevGrayImage, curGrayImage, image, frame;
+	Mat prevGrayImage, curGrayImage, image, frame, background;
 	vector<Point2f> trackingPoints[2];
 	vector<vector<Point2f>> tracking;
+	background = imread("white.jpg");//追踪轨迹窗口的背景，可以调整
 
 	// Image size scaling factor for the input frames
 	float scalingFactor = 0.75;
@@ -132,7 +137,7 @@ int main(int argc, char* argv[])
 		/************在这里实现对目标点的跟踪************/
 		for (int k = 1; k < tracking.size(); k++)
 		{
-			line(image, tracking[k - 1][0], tracking[k][0], Scalar(0, 0, 255), 1, 8, 1);
+			line(background, tracking[k - 1][0], tracking[k][0], Scalar(0, 0, 255), 1, 8, 1);
 		}
 		/************在这里实现对目标点的跟踪************/
 
@@ -152,6 +157,8 @@ int main(int argc, char* argv[])
 
 		// Display the image with the tracking points
 		imshow(windowName, image);
+		//显示追踪轨迹
+		imshow(trajectorName, background);
 
 		// Check if the user pressed the Esc key
 		char ch = waitKey(10);
