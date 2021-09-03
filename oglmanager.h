@@ -7,6 +7,7 @@
 #include <QOpenGLTexture>
 #include "texture2d.h"
 #include "cube.h"
+#include <GL/freeglut.h>
 
 class OGLManager
 {
@@ -35,6 +36,7 @@ public:
   GLboolean isCoordOpen;
   GLboolean isRainOpen;
   QVector3D vec3_leaf_scale;
+  QVector4D vec4_branch_scale;
   GLuint windStrength;//风的强度
 private:
   QVector<Orchid*> left_orchides;

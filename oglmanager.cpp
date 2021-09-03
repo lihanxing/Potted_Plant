@@ -55,7 +55,7 @@ OGLManager::OGLManager(GLuint w, GLuint h){
   isFill = GL_TRUE;
 
   this->isWindOpen = GL_FALSE;
-  this->isCoordOpen = GL_TRUE;
+  this->isCoordOpen = GL_FALSE;
   this->isRainOpen = GL_FALSE;
 
 }
@@ -430,7 +430,9 @@ void OGLManager::draw(GLfloat dt){
 }
 
 void OGLManager::generateCube(QVector<QPointF> bez_points){
-  QMatrix4x4 model;
+	GLUquadricObj *cylquad = gluNewQuadric();
+
+QMatrix4x4 model;
   model.scale(this->vec3_leaf_scale);
 
   Cube *cube = new Cube();

@@ -7,7 +7,7 @@ QPointF getBezierPoint(QVector<QPointF> points, float t);
 
 Paint::Paint(QWidget *parent) : QWidget(parent){
 
-  this->setGeometry(12, 10, PAINT_WIDTH, PAINT_HEIGHT);
+  this->setGeometry(12, 10, PAINT_WIDTH, PAINT_HEIGHT); //设置画线窗口位置和大小
 
   image = QImage(PAINT_WIDTH, PAINT_HEIGHT, QImage::Format_RGB32);
   backColor = qRgb(210, 210, 210);
@@ -52,7 +52,7 @@ void Paint::cancelLastStep(){
 
   //控制点
   QPen pen;
-  pen.setColor(Qt::red);
+  pen.setColor(Qt::white);
   pen.setWidth(5);
   painter.setPen(pen);
 
@@ -61,7 +61,7 @@ void Paint::cancelLastStep(){
   }
 
   //贝塞尔曲线
-  pen.setColor(Qt::blue);
+  pen.setColor(Qt::black);
   pen.setWidth(1);
   painter.setPen(pen);
   for(int i = 0; i < image_bez_points.size(); ++i){
@@ -138,7 +138,7 @@ void Paint::drawPoints(QImage &theImage, QVector<QPointF> points){
   QPainter painter(&theImage);
 
   QPen pen;
-  pen.setColor(Qt::red);
+  pen.setColor(Qt::white);
   pen.setWidth(5);
   painter.setPen(pen);
 
@@ -152,7 +152,7 @@ void Paint::drawBezier(QImage &theImage, QVector<QPointF> points)
   QPainter painter(&theImage);
 
   QPen pen;
-  pen.setColor(Qt::blue);
+  pen.setColor(Qt::black);
   painter.setPen(pen);
 
 //  qDebug() << points.size() << endl;

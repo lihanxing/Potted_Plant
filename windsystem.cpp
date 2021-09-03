@@ -94,7 +94,7 @@ void WindSystem::drawPoints(QImage &theImage, QVector<QPointF> points){
   QPainter painter(&theImage);
 
   QPen pen;
-  pen.setColor(Qt::red);
+  pen.setColor(Qt::green);
   pen.setWidth(7);
   painter.setPen(pen);
 
@@ -107,14 +107,14 @@ void WindSystem::drawBezier(QImage &theImage, QVector<QPointF> points){
   QPainter painter(&theImage);
 
   QPen pen;
-  pen.setColor(Qt::blue);
+  pen.setColor(Qt::black);
   pen.setWidth(3);
   painter.setPen(pen);
 
   for(int i = 0; i < points.size()-1; ++i)
     painter.drawLine(points[i], points[i+1]);
 
-  pen.setColor(QColor(0, 255, 0));
+  pen.setColor(QColor(255, 0, 255));
   pen.setWidth(2);
   painter.setPen(pen);
   painter.drawPoints(&points[0], points.size());

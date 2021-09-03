@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
   this->setWindowTitle("Test");
 
+
   QTimer *timer = new QTimer(this);
   connect(timer, &QTimer::timeout, this, &MainWindow::updateDesktop);
   timer->start(10);
